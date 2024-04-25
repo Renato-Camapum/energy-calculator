@@ -1,0 +1,276 @@
+body {
+  font: 100%/1.5 AvenirNext-Regular, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
+  color: #111; 
+  background-color: #fff;
+  margin: 2em 10%
+}
+h1{
+    text-align: center;
+    font-size: 2.5em;
+}
+h4{
+    text-align: center;
+}
+
+.quote_btn{
+  text-decoration: none;
+  color: #17B162;
+ ;
+ border: #17B162 2px solid;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 15px 5px;
+  font-weight: bold;
+  line-height: 70px;
+}
+.quote_btn:hover{
+  background-color: #17B162;
+  color: white;
+}
+
+.input{
+  background:#0f6d04;
+
+
+
+  color: white;
+  padding: 2% 5% 6%;
+  border-radius: 0.8em 0.8em 0 0;
+}
+#output-results{
+  border: solid 7px #17B162 ;
+  color: #17B162;
+  border-radius: 0 0 0.8em 0.8em;
+
+}
+
+.output-header{
+  color: blue;
+  background-color: #17B162;
+
+  padding: 1% 2% 1% 5%;
+}
+
+.row {
+  display: flex;
+  
+}
+
+.column {
+  flex: 50%;
+
+}
+.question{
+  padding-right: 5%;
+}
+
+.result{
+  text-align: center;
+}
+
+.result h2{
+    font-size: 2.5em;
+    margin-bottom: 0;
+}
+.result h3{
+  margin-top: 0;
+}
+
+.dropdown {
+  position: relative;
+  display:block;
+  margin-top:0.5em;
+  padding:0;
+}
+
+.styled-table{
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+
+}
+.styled-table th {
+background-color: #17B162;
+color: #ffffff;
+text-align: center;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+background-color: #f3f3f3;
+}
+
+
+
+
+
+
+.styled-table tbody tr:last-of-type {
+border-bottom: 2px solid #17b162;
+}
+
+
+.dropdown select,  .emailfield input{
+  width:100%;
+  margin:0;
+  background:none;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  font-size:1.25em;
+  color: #444;
+  padding: .6em 1.9em .5em .8em;
+  line-height:1.3;
+}
+.dropdown select,
+label, .emailfield input {
+  font-family: AvenirNextCondensed-DemiBold, Corbel, "Lucida Grande","Trebuchet Ms", sans-serif;
+}
+
+
+.dropdown::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 8px;
+  top: 50%;
+  right: 1em;
+  margin-top:-4px;
+  z-index: 2;
+  background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 12'%3E%3Cpolygon fill='rgb(102,102,102)' points='8,12 0,0 16,0'/%3E%3C/svg%3E") 0 0 no-repeat;  
+  pointer-events:none;
+}
+
+.calculate-button{
+  margin-top: 3.4em;
+  border-radius: 40px;
+  background-color: #17B162;
+  color: white;
+  border: none;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+}
+.calculate-button:hover{
+  background-color: #178f51;
+}
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dropdown select::-ms-expand {
+    display: none;
+  }
+  select:focus::-ms-value {
+    background: transparent;
+    color: #222;
+  }
+}
+
+body:last-child .dropdown::after, x:-moz-any-link {
+  display: none;
+}
+body:last-child .dropdown select, x:-moz-any-link {
+  padding-right: .8em;
+}
+
+_::-moz-progress-bar, body:last-child .dropdown {
+  overflow: hidden;
+}
+_::-moz-progress-bar, body:last-child .dropdown:after {
+  display: block;
+}
+_::-moz-progress-bar, body:last-child .dropdown select {
+  padding-right: 1.9em;
+  -moz-appearance: window;
+  text-indent: 0.01px;
+  text-overflow: "";
+  width: 110%;
+}
+
+
+_::-moz-progress-bar, body:last-child .dropdown select:focus {
+  outline: 2px solid rgba(180,222,250, .7);
+}
+
+
+x:-o-prefocus, .dropdown::after {
+  display:none;
+}
+
+
+.dropdown:hover {
+  border:1px solid #888;
+}
+
+select:focus {
+  outline:none;
+  box-shadow: 0 0 1px 3px rgba(180,222,250, 1);
+  background-color:transparent;
+  color: #222;
+  border:1px solid #aaa;
+}
+
+
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+option {
+  font-weight:normal;
+}
+
+
+.button {
+  border: 1px solid #bbb;
+  border-radius: .3em;
+  background: #f3f3f3;
+
+}
+
+
+.cost-value{
+  font-size: 2em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+body{
+margin: 0.5em;
+}
+
+  .row{
+    display: block;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  .dropdown select{
+    font-size: 1em;
+  }
+  
+  h3{
+    font-size: 1em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+}
+
