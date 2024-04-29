@@ -5,9 +5,11 @@ import roomData from './data/roomData';
 import { energyPrices, co2Values } from './data/energyData'; 
 import { runningCosts, savingVsRad, energyUsage, co2Reduction } from './utils/calculations';
 
+
+
 function Calculator() {
   const [selectedRoomType, setSelectedRoomType] = useState('bathroom');
-  const [selectedProjectSize, setSelectedProjectSize] = useState('small');
+  const [selectedProjectSize, setSelectedProjectSize] = useState();
   const [email, setEmail] = useState('');
   const [resultsVisible, setResultsVisible] = useState(false);
   const [roomTypeChanged, setRoomTypeChanged] = useState(false);
@@ -44,7 +46,7 @@ function Calculator() {
   }, [resultsVisible, projectSizeChanged, selectedRoomType]);
 
   const updateHeadings = () => {
-    const room = roomData[selectedRoomType][selectedProjectSize];
+    const room = roomData[selectedRoomType];
     const runningcostelec = document.getElementById('running-cost-elec');
     const co2emissionselec = document.getElementById('co2-emiss-elec');
     const savingvstraditionalelec = document.getElementById('savings-elec');
@@ -54,14 +56,14 @@ function Calculator() {
     const savingvstraditionalwater = document.getElementById('savings-water');
     const energyusewater = document.getElementById('energyuse-water');
 
-    runningcostelec.innerHTML = '£' + runningCosts(room.elec_watt, room.size, energyPrices.elec_price);
-    runningcostwater.innerHTML = '£' + runningCosts(room.gas_watt, room.size, energyPrices.gas_price);
-    co2emissionselec.innerHTML = co2Reduction(room.r_watt, room.size, room.elec_watt, energyPrices.elec_price, co2Values.elec_co2);
-    co2emissionswater.innerHTML = co2Reduction(room.r_watt, room.size, room.gas_watt, energyPrices.gas_price, co2Values.gas_co2);
-    savingvstraditionalelec.innerHTML = savingVsRad(room.elec_watt, room.size, energyPrices.elec_price, room.r_watt);
-    savingvstraditionalwater.innerHTML = savingVsRad(room.gas_watt, room.size, energyPrices.gas_price, room.r_watt);
-    energyuseelec.innerHTML = energyUsage(room.elec_watt, room.size);
-    energyusewater.innerHTML = energyUsage(room.gas_watt, room.size);
+    runningcostelec.innerHTML = '£' + runningCosts(room.elec_watt, selectedProjectSize, energyPrices.elec_price);
+    runningcostwater.innerHTML = '£' + runningCosts(room.gas_watt, selectedProjectSize, energyPrices.gas_price);
+    co2emissionselec.innerHTML = co2Reduction(room.r_watt, selectedProjectSize, room.elec_watt, energyPrices.elec_price, co2Values.elec_co2);
+    co2emissionswater.innerHTML = co2Reduction(room.r_watt, selectedProjectSize, room.gas_watt, energyPrices.gas_price, co2Values.gas_co2);
+    savingvstraditionalelec.innerHTML = savingVsRad(room.elec_watt, selectedProjectSize, energyPrices.elec_price, room.r_watt);
+    savingvstraditionalwater.innerHTML = savingVsRad(room.gas_watt, selectedProjectSize, energyPrices.gas_price, room.r_watt);
+    energyuseelec.innerHTML = energyUsage(room.elec_watt, selectedProjectSize);
+    energyusewater.innerHTML = energyUsage(room.gas_watt, selectedProjectSize);
   };
 
   return (

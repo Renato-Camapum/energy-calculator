@@ -2,25 +2,17 @@ import React, { useEffect } from 'react';
 import roomData from '../data/roomData';
 import CostCalculator from '../CostCalculator';
 
-const room = roomData.livingroom.small.size;
-console.log(room);
+
+
 
 function CalculatorForm({ selectedRoomType, setSelectedRoomType, selectedProjectSize, setSelectedProjectSize, email, setEmail, handleSubmit,setRoomTypeChanged,
     setProjectSizeChanged }) {
-
-
-      // useEffect(() => {
-      //   if (selectedRoomType && selectedProjectSize) {
-      //     CostCalculator.updateHeadings();
-      //   }
-      // }, [selectedRoomType, selectedProjectSize]);
-
   return (
-    <form id="calculator-form" onSubmit={handleSubmit}>
+    <form action='' method='' id="calculator-form" onSubmit={handleSubmit}>
          <div className="pull-left text-large col-md-6 padding-left-0">
                 <div className="row">
                   <div className="column question">
-                    <h3> Room Type:</h3>
+                    <h3 className='question_name'> Room Type:</h3>
                     <div className="button dropdown">
                       <select
                         id="room-type"
@@ -39,26 +31,26 @@ function CalculatorForm({ selectedRoomType, setSelectedRoomType, selectedProject
                     </div>
                   </div>
                   <div className="column question">
-                    <h3> Project Size:</h3>
-                    <div className="button dropdown">
-                      <select
+                    <h3 className='question_name'> Project Size:</h3>
+                    <div className="button input_lfield">
+                      <input
                         id="project-size"
+                        placeholder="In meters squared"
+                        required
                         value={selectedProjectSize}
                         onChange={(e) => {setSelectedProjectSize(e.target.value);
                         setProjectSizeChanged(true);
                         }}
                       >
-                        <option value="small">Small (Approx. {roomData.bathroom.small.size} sqm)</option>
-                        <option value="medium">Medium</option>
-                        <option value="large">Large</option>
-                      </select>
+                        
+                      </input>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="column question">
-                    <h3> Email Address:</h3>
-                    <div className="button emailfield">
+                    <h3 className='question_name'> Email Address:</h3>
+                    <div className="button input_lfield">
                       <input
                         type="email"
                         id="email"
@@ -81,6 +73,8 @@ function CalculatorForm({ selectedRoomType, setSelectedRoomType, selectedProject
               </div>
     </form>
   );
+  
 }
+
 
 export default CalculatorForm;

@@ -18,12 +18,13 @@ h4 {
 
 .quote_btn {
   text-decoration: none;
-  color: #1d1b1b;
+  background: #1d1b1b;
+  color: white;
   border: #1d1b1b 2px solid;
   border-radius: 40px;
   text-align: center;
   cursor: pointer;
-  padding: 15px 5px;
+  padding: 15px 15px;
   font-weight: bold;
   line-height: 70px;
 }
@@ -64,6 +65,10 @@ h4 {
 
 .question {
   padding-right: 5%;
+}
+
+.question_name {
+  margin-block-end: 5px;
 }
 
 .result {
@@ -117,7 +122,7 @@ h4 {
 }
 
 .dropdown select,
-.emailfield input {
+.input_lfield input {
   width: 100%;
   margin: 0;
   background: none;
