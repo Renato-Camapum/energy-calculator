@@ -29,18 +29,8 @@ function Calculator() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-  
-  useEffect(() => {
-    if (resultsVisible && ((roomTypeChanged && selectedProjectSize) || (projectSizeChanged && selectedRoomType))) {
-      updateHeadings();
-      if (roomTypeChanged) {
-        setRoomTypeChanged(false);
-      }
-      if (projectSizeChanged) {
-        setProjectSizeChanged(false);
-      }
-    }
-  }, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType]);
+
+
 
   
   const updateHeadings = () => {
@@ -66,6 +56,19 @@ function Calculator() {
     energyusewater.innerHTML = energyUsage(room.gas_watt, selectedProjectSize);
     
   };
+
+  
+ useEffect(() => {
+  if (resultsVisible && ((roomTypeChanged && selectedProjectSize) || (projectSizeChanged && selectedRoomType))) {
+    updateHeadings();
+    if (roomTypeChanged) {
+      setRoomTypeChanged(false);
+    }
+    if (projectSizeChanged) {
+      setProjectSizeChanged(false);
+    }
+  }
+}, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType, updateHeadings]);
 
   return (
     <div>
