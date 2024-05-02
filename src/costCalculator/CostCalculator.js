@@ -31,9 +31,6 @@ function Calculator() {
   };
 
 
-  
-
-  
  useEffect(() => {
 
   const updateHeadings = () => {

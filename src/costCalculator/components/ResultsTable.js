@@ -8,7 +8,7 @@ function ResultsTable() {
           <table className="styled-table">
             <tr>
               <th>
-                <h2 id="room-name"></h2>
+                <h2 id="room-name">Room name</h2>
               </th>
               <th>
                 <h2>Electric Underfloor Heating</h2>
