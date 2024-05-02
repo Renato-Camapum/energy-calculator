@@ -29,21 +29,18 @@ function Calculator() {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);
   };
-
+  
   useEffect(() => {
-    if (resultsVisible && roomTypeChanged && selectedProjectSize) {
+    if (resultsVisible && ((roomTypeChanged && selectedProjectSize) || (projectSizeChanged && selectedRoomType))) {
       updateHeadings();
-      setRoomTypeChanged(false);
-    
+      if (roomTypeChanged) {
+        setRoomTypeChanged(false);
+      }
+      if (projectSizeChanged) {
+        setProjectSizeChanged(false);
+      }
     }
-  }, [resultsVisible, roomTypeChanged, selectedProjectSize]);
-
-  useEffect(() => {
-    if (resultsVisible && projectSizeChanged && selectedRoomType) {
-      updateHeadings();
-      setProjectSizeChanged(false);
-    }
-  }, [resultsVisible, projectSizeChanged, selectedRoomType]);
+  }, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType]);
 
   
   const updateHeadings = () => {
