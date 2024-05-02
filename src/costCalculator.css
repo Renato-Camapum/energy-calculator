@@ -1,6 +1,5 @@
 body {
-  font: 100%/1.5 opensans, Corbel, "Lucida Grande", "Trebuchet Ms",
-    sans-serif;
+  font: 100%/1.5 opensans, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
   color: #111;
   background-color: #fff;
   margin: 2em 10%;
@@ -45,7 +44,7 @@ h4 {
 #output-results {
   border: solid 7px #1d1b1b;
   color: #1d1b1b;
-  border-radius: 0 0 40 40 !important;
+  border-radius:0 0 0.8em 0.8em;
 }
 
 .output-header {
@@ -159,7 +158,7 @@ h4 {
 }
 
 .calculate-button {
-  margin-top: 3.4em;
+  margin-top: 2.9em;
   border-radius: 40px;
   background-color: #ce1226;
   color: white;
