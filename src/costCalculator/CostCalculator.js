@@ -6,7 +6,6 @@ import { energyPrices, co2Values } from './data/energyData';
 import { runningCosts, savingVsRad, energyUsage, co2Reduction } from './utils/calculations';
 
 
-
 function Calculator() {
   const [selectedRoomType, setSelectedRoomType] = useState('bathroom');
   const [selectedProjectSize, setSelectedProjectSize] = useState();
@@ -35,6 +34,7 @@ function Calculator() {
     if (resultsVisible && roomTypeChanged && selectedProjectSize) {
       updateHeadings();
       setRoomTypeChanged(false);
+    
     }
   }, [resultsVisible, roomTypeChanged, selectedProjectSize]);
 
@@ -45,8 +45,10 @@ function Calculator() {
     }
   }, [resultsVisible, projectSizeChanged, selectedRoomType]);
 
+  
   const updateHeadings = () => {
     const room = roomData[selectedRoomType];
+    const roomType = document.getElementById('room-name');
     const runningcostelec = document.getElementById('running-cost-elec');
     const co2emissionselec = document.getElementById('co2-emiss-elec');
     const savingvstraditionalelec = document.getElementById('savings-elec');
@@ -56,6 +58,7 @@ function Calculator() {
     const savingvstraditionalwater = document.getElementById('savings-water');
     const energyusewater = document.getElementById('energyuse-water');
 
+    roomType.innerHTML = (room.name);
     runningcostelec.innerHTML = '£' + runningCosts(room.elec_watt, selectedProjectSize, energyPrices.elec_price);
     runningcostwater.innerHTML = '£' + runningCosts(room.gas_watt, selectedProjectSize, energyPrices.gas_price);
     co2emissionselec.innerHTML = co2Reduction(room.r_watt, selectedProjectSize, room.elec_watt, energyPrices.elec_price, co2Values.elec_co2);
@@ -64,6 +67,7 @@ function Calculator() {
     savingvstraditionalwater.innerHTML = savingVsRad(room.gas_watt, selectedProjectSize, energyPrices.gas_price, room.r_watt);
     energyuseelec.innerHTML = energyUsage(room.elec_watt, selectedProjectSize);
     energyusewater.innerHTML = energyUsage(room.gas_watt, selectedProjectSize);
+    
   };
 
   return (
@@ -93,4 +97,4 @@ function Calculator() {
   );
 }
 
-export default Calculator;
+export default  Calculator;

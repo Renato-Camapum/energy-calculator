@@ -1,5 +1,8 @@
 import React from 'react';
 
+
+
+
 function ResultsTable() {
   return (
     <div className="output">
@@ -7,7 +10,7 @@ function ResultsTable() {
       <div id="output-results">
 
 <table className="styled-table">
-    <th></th>
+    <th><h2 id='room-name'></h2></th>
     <th><h2>Electric Underfloor Heating</h2></th>
     <th><h2>Water Underfloor Heating</h2></th>
     <tbody>
@@ -47,5 +50,4 @@ function ResultsTable() {
     </div>
   );
 }
-
 export default ResultsTable;
