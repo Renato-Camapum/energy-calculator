@@ -8,7 +8,7 @@ import { runningCosts, savingVsRad, energyUsage, co2Reduction } from './utils/ca
 
 function Calculator() {
   const [selectedRoomType, setSelectedRoomType] = useState('bathroom');
-  const [selectedProjectSize, setSelectedProjectSize] = useState(null);
+  const [selectedProjectSize, setSelectedProjectSize] = useState();
   const [email, setEmail] = useState('');
   const [resultsVisible, setResultsVisible] = useState(false);
   const [roomTypeChanged, setRoomTypeChanged] = useState(false);
@@ -31,7 +31,7 @@ function Calculator() {
   };
 
   useEffect(() => {
-    if (resultsVisible && roomTypeChanged && selectedProjectSize !== null) {
+    if (resultsVisible && roomTypeChanged && selectedProjectSize) {
       updateHeadings();
       setRoomTypeChanged(false);
     
