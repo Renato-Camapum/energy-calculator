@@ -31,8 +31,11 @@ function Calculator() {
   };
 
 
+  
 
   
+ useEffect(() => {
+
   const updateHeadings = () => {
     const room = roomData[selectedRoomType];
     const roomType = document.getElementById('room-name');
@@ -57,8 +60,6 @@ function Calculator() {
     
   };
 
-  
- useEffect(() => {
   if (resultsVisible && ((roomTypeChanged && selectedProjectSize) || (projectSizeChanged && selectedRoomType))) {
     updateHeadings();
     if (roomTypeChanged) {
@@ -68,7 +69,7 @@ function Calculator() {
       setProjectSizeChanged(false);
     }
   }
-}, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType, updateHeadings]);
+}, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType]);
 
   return (
     <div>
