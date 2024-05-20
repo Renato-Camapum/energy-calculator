@@ -19,23 +19,23 @@ function ResultsTable() {
             </tr>
             <tbody>
               <tr>
-                <td>
-                  <h3>Typical Running Costs (per year)</h3>
+                <td >
+                <div className="result-list"><img className="icon" src="../icons/cost.svg" alt="costs icon"/><h3>Typical Running Costs (per year)</h3></div>
                 </td>
                 <td>
-                  <h3 id="running-cost-elec" className="cost-value">
+                <h3 id="running-cost-elec" className="cost-value">
                     0
                   </h3>
                 </td>
                 <td>
-                  <h3 id="running-cost-water" className="cost-value">
+                <h3 id="running-cost-water" className="cost-value">
                     0
                   </h3>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <h3>Reduction in annual CO2 emissions (kg)</h3>
+                <div className="result-list"><img className="icon" src="../icons/eco.svg" alt="eco icon"/><h3>Reduction in annual CO2 emissions (kg)</h3></div>
                 </td>
                 <td>
                   <h3 id="co2-emiss-elec" className="cost-value"></h3>
@@ -45,8 +45,8 @@ function ResultsTable() {
                 </td>
               </tr>
               <tr>
-                <td>
-                  <h3>Saving vs. traditional radiator system (per year)</h3>
+                <td >
+                <div className="result-list"><img className="icon" src="../icons/saves.svg" alt="saving icon"/><h3>Saving vs. traditional radiator system (per year)</h3></div>
                 </td>
                 <td>
                   <h3 id="savings-elec" className="cost-value">
@@ -60,8 +60,8 @@ function ResultsTable() {
                 </td>
               </tr>
               <tr id="energy-use-row">
-                <td>
-                  <h3>Estimated annual energy use (kWh)</h3>
+                <td >
+                <div className="result-list"><img className="icon" src="../icons/energy.svg" alt="energy icon"/><h3>Estimated annual energy use (kWh)</h3></div>
                 </td>
                 <td>
                   <h3 id="energyuse-elec" className="cost-value"></h3>

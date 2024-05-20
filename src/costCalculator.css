@@ -79,8 +79,9 @@ h4 {
   margin-bottom: 0;
 }
 
-.result h3 {
-  margin-top: 0;
+h3 {
+  font-size: 1.3em;
+
 }
 
 .dropdown {
@@ -172,6 +173,16 @@ h4 {
 
 .calculate-button:hover {
   background-color: #af202f;
+}
+
+.result-list {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  margin-right: 20px;
 }
 
 .footer_link {
@@ -282,7 +293,7 @@ option {
   text-align: center;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 802px) {
   body {
     margin: 0.5em;
   }
