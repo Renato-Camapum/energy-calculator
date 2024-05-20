@@ -2,7 +2,8 @@ body {
   font: 100%/1.5 opensans, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
   color: #111;
   background-color: #fff;
-  margin: 2em 10%;
+  margin: 3em auto;
+  max-width: 1000px;
 }
 
 h1 {
