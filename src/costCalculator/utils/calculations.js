@@ -1,5 +1,5 @@
 const energyPrices = {
-    elec_price: 0.27,
+    elec_price: 0.245,
     gas_price: 0.07,
   };
   
@@ -12,19 +12,34 @@ const energyPrices = {
     return (watt * size * price).toFixed(2);
   }
   
-  function savingVsRad(watt, size, cost, r_watt) {
-    const saving = (r_watt * size * cost) - (watt * size * cost);
+  
+  function savingVsRad(watt, size, cost, r_watt, gas_cost) {
+    // console.log(watt);
+    // console.log(size);
+    // console.log(cost);
+    
+    const saving = (r_watt * size * gas_cost) - (watt * size * cost);
+    console.log(saving);
     return saving < 0 ? '' : `£${saving.toFixed(2)}`;
   }
   
+
   function energyUsage(watt, size) {
-    return (watt * size).toFixed(0);
+    
+    const usedEnergy = (watt * size).toFixed(0);
+    
+    return usedEnergy;
+    
   }
+
+
   
-  function co2Reduction(watt_r, size, watt_ufh, price, co2UFH) {
+
+  function co2Reduction(watt_r, size, watt, co2, r_co2) {
+    console.log(watt_r * size *  r_co2);
+    console.log(watt * size *  co2);
     const co2red =
-      (energyUsage(watt_r, size) * co2Values.gas_co2) -
-      (energyUsage(watt_ufh, size) * co2UFH);
+      (watt_r * size * r_co2) - (watt * size *  co2);
     return co2red < 0 ? '' : co2red.toFixed(1);
   }
   
