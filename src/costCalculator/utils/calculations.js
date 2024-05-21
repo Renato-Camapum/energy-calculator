@@ -12,32 +12,17 @@ const energyPrices = {
     return (watt * size * price).toFixed(2);
   }
   
-  
   function savingVsRad(watt, size, cost, r_watt, gas_cost) {
-    // console.log(watt);
-    // console.log(size);
-    // console.log(cost);
-    
     const saving = (r_watt * size * gas_cost) - (watt * size * cost);
-    console.log(saving);
     return saving < 0 ? '' : `£${saving.toFixed(2)}`;
   }
   
-
   function energyUsage(watt, size) {
-    
     const usedEnergy = (watt * size).toFixed(0);
-    
     return usedEnergy;
-    
   }
 
-
-  
-
   function co2Reduction(watt_r, size, watt, co2, r_co2) {
-    console.log(watt_r * size *  r_co2);
-    console.log(watt * size *  co2);
     const co2red =
       (watt_r * size * r_co2) - (watt * size *  co2);
     return co2red < 0 ? '' : co2red.toFixed(1);
