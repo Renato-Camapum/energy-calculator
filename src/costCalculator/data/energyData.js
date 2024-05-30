@@ -4,6 +4,7 @@ export const energyPrices = {
 };
 
 export const co2Values = {
-    elec_co2: 0.19338,
-    gas_co2: 0.20227,
+    elec_co2: 0.21523,
+    gas_co2: 0.20267,
+       
 };
