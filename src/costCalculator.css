@@ -2,7 +2,7 @@ body {
   font: 100%/1.5 opensans, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
   color: #111;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 10px auto;
   max-width: 700px;
   max-height: 1000px;
 }
@@ -305,7 +305,7 @@ option {
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2.5em;
   }
 
   .dropdown select {
