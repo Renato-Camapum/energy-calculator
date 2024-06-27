@@ -72,7 +72,7 @@ function ResultsTable() {
               </tr>
               <tr id="quote-btn-row">
                 <td></td>
-                <td className="quote-btn-data">
+                {/* <td className="quote-btn-data">
                   <a
                     className="quote_btn"
                     href="https://tools.warmup.co.uk/quick-quote-form"
@@ -87,7 +87,7 @@ function ResultsTable() {
                   >
                     Get Water Quote
                   </a>
-                </td>
+                </td> */}
               </tr>
             </tbody>
           </table>
