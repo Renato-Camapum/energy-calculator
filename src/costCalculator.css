@@ -2,7 +2,7 @@ body {
   font: 100%/1.5 opensans, Corbel, "Lucida Grande", "Trebuchet Ms", sans-serif;
   color: #111;
   background-color: #fff;
-  margin: 1rem auto;
+  margin: 0 auto;
   max-width: 700px;
   max-height: 1000px;
 }
@@ -38,14 +38,14 @@ h4 {
 }
 
 .input {
-  background-color: #1d1b1b;
-  color: white;
+  background-color: white;
+  color: #1d1b1b;
   padding: 2% 5% 4%;
   border-radius: 0.8em 0.8em 0 0;
 }
 
 #output-results {
-  border: solid 7px #1d1b1b;
+  border: none;
   color: #1d1b1b;
   border-radius:0 0 0.8em 0.8em;
 }
@@ -298,7 +298,7 @@ option {
 
 @media only screen and (max-width: 802px) {
   body {
-    margin: 0.5em;
+    margin: 0;
   }
   .row {
     display: block;
