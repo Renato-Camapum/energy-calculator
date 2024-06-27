@@ -74,7 +74,7 @@ function ResultsTable() {
                 <td></td>
                 <td className="quote-btn-data">
                   <a
-                    className="quote_btn"
+                    className="quote_btn" target="_blank"
                     href="https://tools.warmup.co.uk/quick-quote-form"
                   >
                     Get Electric Quote
@@ -82,7 +82,7 @@ function ResultsTable() {
                 </td>
                 <td className="quote-btn-data">
                   <a
-                    className="quote_btn"
+                    className="quote_btn" target="_blank"
                     href="https://pro.warmup.co.uk/hydro-sqq-form/?new_quote=1"
                   >
                     Get Water Quote
