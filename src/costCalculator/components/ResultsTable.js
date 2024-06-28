@@ -11,10 +11,10 @@ function ResultsTable() {
                 <h2 id="room-name">Room name</h2>
               </th>
               <th>
-                <h2>Electric Underfloor Heating</h2>
+                <h2>Electric</h2>
               </th>
               <th>
-                <h2>Water Underfloor Heating</h2>
+                <h2>Water</h2>
               </th>
             </tr>
             <tbody>
@@ -35,7 +35,7 @@ function ResultsTable() {
               </tr>
               <tr>
                 <td>
-                <div className="result-list"><img className="icon" src="../icons/eco.svg" alt="eco icon"/><h3>Reduction in annual CO2 emissions (kg)</h3></div>
+                <div className="result-list"><img className="icon" src="../icons/eco.svg" alt="eco icon"/><h3>Reduction in annual CO2 emissions</h3></div>
                 </td>
                 <td>
                   <h3 id="co2-emiss-elec" className="cost-value"></h3>
@@ -46,7 +46,7 @@ function ResultsTable() {
               </tr>
               <tr>
                 <td >
-                <div className="result-list"><img className="icon" src="../icons/saves.svg" alt="saving icon"/><h3>Saving vs. traditional radiator system (per year)</h3></div>
+                <div className="result-list"><img className="icon" src="../icons/saves.svg" alt="saving icon"/><h3>Saving vs. radiator (per year)</h3></div>
                 </td>
                 <td>
                   <h3 id="savings-elec" className="cost-value">

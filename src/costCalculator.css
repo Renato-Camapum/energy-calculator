@@ -19,16 +19,16 @@ h4 {
 }
 
 .quote_btn {
+  display: inline-flex;
   text-decoration: none;
   background: #1d1b1b;
   color: white;
-  border: #1d1b1b 2px solid;
-  border-radius: 40px;
+  border-radius: 5px;
   text-align: center;
   cursor: pointer;
-  padding: 15px 15px;
+  padding: 15px 4px;
   font-weight: bold;
-  line-height: 70px;
+  margin: 15px 0;
 }
 
 .quote_btn:hover {
@@ -74,7 +74,7 @@ h4 {
 }
 
 .question_name {
-  margin-block-end: 5px;
+  margin-block-end: 2px;
 }
 
 .result {
@@ -166,8 +166,8 @@ h3 {
 }
 
 .calculate-button {
-  margin-top: 0.9em;
-  border-radius: 40px;
+  margin-top: 2.9em;
+  border-radius: 5px;
   background-color: #ce1226;
   color: white;
   border: none;
@@ -312,15 +312,23 @@ option {
     font-size: 2.5em;
   }
 
-  .dropdown select {
+  .dropdown {
+    margin-top: 0;
+  }
+  .calculate-button {
     font-size: 1em;
+    margin-top: 0.9em;
   }
 
-  h3 {
+  .question_name {
+    margin-top: 10px;
+  }
+  #email, #project-size, .dropdown select {
     font-size: 1em;
+    padding: 0.3em 1.9em 0.3em 0.8em;
   }
 
-  h2 {
+  h3, h2 {
     font-size: 1em;
   }
 
@@ -333,9 +341,10 @@ option {
     border-radius: 10px;
     line-height: 15px;
     margin: 5px;
+    padding: 3px 15px;
   }
 
   .question{
-    padding-right: 0;;
+    padding-right: 0;
   }
 }
