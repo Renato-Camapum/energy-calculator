@@ -44,6 +44,10 @@ h4 {
   border-radius: 0.8em 0.8em 0 0;
 }
 
+.output {
+  padding: 0 20px;
+}
+
 #output-results {
   border: none;
   color: #1d1b1b;
@@ -329,5 +333,9 @@ option {
     border-radius: 10px;
     line-height: 15px;
     margin: 5px;
+  }
+
+  .question{
+    padding-right: 0;;
   }
 }
