@@ -7,13 +7,13 @@ function ResultsTable() {
         <div id="output-results">
           <table className="styled-table">
             <tr>
-              <th>
+              <th className="thead_1">
                 <h2 id="room-name">Room name</h2>
               </th>
-              <th>
+              <th className="thead_2">
                 <h2>Electric</h2>
               </th>
-              <th>
+              <th className="thead_3">
                 <h2>Water</h2>
               </th>
             </tr>
