@@ -13,7 +13,7 @@ function CalculatorForm({
 }) {
 
   return (
-    <form id="calculator-form" action="" method="" id="calculator-form" onSubmit={handleSubmit}>
+    <form id="calculator-form" action="" method="" onSubmit={handleSubmit}>
       <div className="pull-left text-large col-md-6 padding-left-0">
         <div className="row">
           <div className="column question">
@@ -57,6 +57,7 @@ function CalculatorForm({
             <h3 className="question_name"> Email Address:</h3>
             <div className="button input_lfield">
               <input
+                name="email"
                 type="email"
                 id="email"
                 placeholder="Enter your email..."
