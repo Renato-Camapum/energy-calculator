@@ -73,7 +73,7 @@ function Calculator() {
       <div className="wrapper">
         <div className="input">
           <div className="content">
-            <h1><b>Costs Calculator</b></h1>
+            <h1><b>Cost Calculator</b></h1>
             <div className="margin-top">
               <CalculatorForm
                 selectedRoomType={selectedRoomType}

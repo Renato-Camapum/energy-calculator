@@ -23,10 +23,10 @@ h4 {
   text-decoration: none;
   background: #1d1b1b;
   color: white;
-  border-radius: 5px;
+  border-radius: 25px;
   text-align: center;
   cursor: pointer;
-  padding: 15px 4px;
+  padding: 5px 8px;
   font-weight: bold;
   margin: 15px 0;
 }
@@ -175,7 +175,7 @@ h3 {
 
 .calculate-button {
   margin-top: 2.9em;
-  border-radius: 5px;
+  border-radius: 25px;
   background-color: #ce1226;
   color: white;
   border: none;
