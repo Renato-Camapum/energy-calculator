@@ -14,7 +14,7 @@ const energyPrices = {
   
   function savingVsRad(watt, size, cost, r_watt, gas_cost) {
     const saving = (r_watt * size * gas_cost) - (watt * size * cost);
-    return saving < 0 ? '' : `£${saving.toFixed(2)}`;
+    return saving < 0 ? '-' : `£${saving.toFixed(2)}`;
   }
   
   function energyUsage(watt, size) {
