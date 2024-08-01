@@ -1,5 +1,9 @@
 import React, { useEffect } from "react";
 
+
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21503363.js"></script>
+
+
 function CalculatorForm({
   selectedRoomType,
   setSelectedRoomType,
@@ -12,6 +16,7 @@ function CalculatorForm({
   setProjectSizeChanged,
 }) {
 
+  
   return (
     <form id="calculator-form" action="" method="" onSubmit={handleSubmit}>
       <div className="pull-left text-large col-md-6 padding-left-0">
@@ -67,7 +72,9 @@ function CalculatorForm({
               />
             </div>
           </div>
-          <div className="column question">
+
+
+          <div className="column question actions">
             <input
               type="submit"
               value="Calculate Costs"
@@ -80,7 +87,6 @@ function CalculatorForm({
     </form>
   );
 }
-
 
 
 export default CalculatorForm;

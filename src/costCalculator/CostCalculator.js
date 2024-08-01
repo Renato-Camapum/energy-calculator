@@ -5,6 +5,7 @@ import roomData from './data/roomData';
 import { energyPrices, co2Values } from './data/energyData'; 
 import { runningCosts, savingVsRad, energyUsage, co2Reduction } from './utils/calculations';
 
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21503363.js"></script>
 
 function Calculator() {
   const [selectedRoomType, setSelectedRoomType] = useState('bathroom');
@@ -14,7 +15,10 @@ function Calculator() {
   const [roomTypeChanged, setRoomTypeChanged] = useState(false);
   const [projectSizeChanged, setProjectSizeChanged] = useState(false);
 
-  const handleSubmit = (e) => {
+
+  
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateEmail(email)) {
       alert('Please enter a valid email address.');
@@ -23,7 +27,10 @@ function Calculator() {
     setResultsVisible(true);
     setRoomTypeChanged(true);
     setProjectSizeChanged(true);
-  };
+    };
+
+  
+
 
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
