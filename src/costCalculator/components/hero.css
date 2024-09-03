@@ -1,0 +1,35 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     margin-bottom: 100px;
+    
+}
+
+.hero-text {
+   
+   margin: auto;
+ 
+}
+
+.hero-img {
+width: 50%;
+    img {
+        max-width: 100%;
+        
+    }
+}
+
+.hero-title {
+    font-size: 2.2rem;
+}
+
+#calculate_button {
+    position: relative;
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -30px;
+}

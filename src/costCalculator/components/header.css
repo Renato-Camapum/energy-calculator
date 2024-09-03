@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+
+.quote_btn {
+    background-color: #ce1226;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primary_qt_btn {
+    color: #ffffff;
+    font-weight: bold;
+    border-bottom: none;
+    cursor: pointer;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+span.site-logo-img {
+    align-self: center;
+}
