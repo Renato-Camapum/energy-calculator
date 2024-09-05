@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0 15px;
+    box-shadow: -16px 32px 11px -34px rgba(0,0,0,0.45);
 }
 
 .quote_btn {
@@ -23,4 +24,11 @@
 
 span.site-logo-img {
     align-self: center;
+}
+
+@media only screen and (max-width: 802px) {
+    
+   #quoteButton {
+        display: none;
+     }
 }

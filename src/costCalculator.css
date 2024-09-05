@@ -10,6 +10,8 @@ body {
 .calculator-container {
   display: flex;
   justify-content: space-evenly;
+  background: dimgrey;
+  padding: 100px 0;
 }
 
 
@@ -27,6 +29,10 @@ h4 {
   text-align: center;
 }
 
+a {
+  text-decoration: none;;
+}
+
 .quote_btn {
   display: inline-flex;
   text-decoration: none;
@@ -40,6 +46,12 @@ h4 {
   margin: 15px 0;
 }
 
+
+
+.quote-space {
+  border-radius: 0 0 0 25px;
+}
+
 .quote_btn:hover {
   background-color: #af202f;
   border: none;
@@ -50,7 +62,8 @@ h4 {
   background-color: white;
   color: #1d1b1b;
   padding: 2% 5% 4%;
-  border-radius: 0.8em 0.8em 0 0;
+  border-radius: 25px;
+  height: 94%;
 }
 
 .output {
@@ -60,22 +73,21 @@ h4 {
 #output-results {
   border: none;
   color: #1d1b1b;
-  border-radius:0 0 0.8em 0.8em;
+  border-radius:25px;
 }
 
 .output-header {
   color: white;
   background-color: #1d1b1b;
-
   padding: 1% 2% 1% 5%;
 }
 
 .thead_1 {
-  border-radius: 5px 0 0 5px;
+  border-radius: 25px 0 0 0;
 }
 
 .thead_3 {
-  border-radius:   0 5px  5px 0;
+  border-radius:   0 25px  0 0;
 }
 
 .row {
@@ -134,16 +146,13 @@ h3 {
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #ddd;
+  background: white;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
 
-.styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1d1b1b;
-}
 
 .dropdown select,
 .input_lfield input {
@@ -206,7 +215,7 @@ h3 {
 
 .icon {
   width: 30px;
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 .footer_link {
@@ -313,14 +322,24 @@ option {
   background-color: white !important;
 }
 
-.quote-btn-data {
+.quote-btn-data, .quote-btn-data1 {
   text-align: center;
+}
+.quote-btn-data1 {
+border-radius: 0 0 25px 0;
 }
 
 @media only screen and (max-width: 802px) {
   body {
     margin: 0 auto;
   }
+
+  .calculator-container {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .row {
     display: block;
   }
@@ -332,14 +351,17 @@ option {
   .dropdown {
     margin-top: 0;
   }
-  .calculate-button {
-    font-size: 1em;
-    margin-top: 0.9em;
+
+
+  .input {
+    border-radius: 25px 25px 0 0;
+    padding-bottom: 30PX;
   }
 
   .question_name {
     margin-top: 10px;
   }
+
   #email, #project-size, .dropdown select {
     font-size: 1em;
     padding: 0.3em 1.9em 0.3em 0.8em;
@@ -353,6 +375,10 @@ option {
     font-size: 1.2em;
   }
 
+  .thead_1, .thead_3 {
+    border-radius: 0;
+  }
+
   .quote_btn {
     display: inline-flex;
     border-radius: 25px;
@@ -363,5 +389,9 @@ option {
 
   .question{
     padding-right: 0;
+  }
+
+  .wrapper,.output {
+    width: 96%;
   }
 }

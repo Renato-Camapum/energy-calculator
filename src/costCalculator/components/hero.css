@@ -26,10 +26,36 @@ width: 50%;
 
 #calculate_button {
     position: relative;
-    padding: 5px 20px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: bold;
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: -30px;
+}
+
+@media only screen and (max-width: 802px) {
+    .hero {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-subtitle {
+        text-align: center;
+        margin: 0 20px;
+    }
+
+    .hero-img img {
+        display: none;
+    }
+    
+   #calculate_button {
+    padding: 10px 20px;
+   }
 }
