@@ -76,11 +76,11 @@ function Calculator() {
 }, [resultsVisible, roomTypeChanged, selectedProjectSize, projectSizeChanged, selectedRoomType]);
 
   return (
-    <div>
+    <div className='calculator-container'>
       <div className="wrapper">
         <div className="input">
           <div className="content">
-            <h1><b>Cost Calculator</b></h1>
+            {/* <h1><b>Cost Calculator</b></h1> */}
             <div className="margin-top">
               <CalculatorForm
                 selectedRoomType={selectedRoomType}

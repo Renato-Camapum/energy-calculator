@@ -71,7 +71,7 @@ function ResultsTable() {
                 </td>
               </tr>
               <tr id="quote-btn-row">
-                <td></td>
+                <td className="quote-space"></td>
                 <td className="quote-btn-data">
                   <a
                     className="quote_btn" target="_blank"
@@ -80,7 +80,7 @@ function ResultsTable() {
                     Get Electric Quote
                   </a>
                 </td>
-                <td className="quote-btn-data">
+                <td className="quote-btn-data1">
                   <a
                     className="quote_btn" target="_blank"
                     href="https://pro.warmup.co.uk/hydro-sqq-form/?new_quote=1"
@@ -91,19 +91,7 @@ function ResultsTable() {
               </tr>
             </tbody>
           </table>
-          <h4>
-            *Running costs are estimates based on building standards and
-            Warmup's own testing. For full details click here*
-          </h4>
-          <h4>
-            Powered by{" "}
-            <a
-              className="footer_link"
-              href="https://www.warmup.co.uk/underfloor-heating"
-            >
-              Warmup PLC
-            </a>
-          </h4>
+         
         </div>
       </div>
     </div>

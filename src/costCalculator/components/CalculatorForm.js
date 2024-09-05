@@ -59,6 +59,32 @@ function CalculatorForm({
         </div>
         <div className="row">
           <div className="column question">
+            <div className="question_name">
+            <h3 className="question_name">First Name:</h3>
+            <div className="button input_lfield">
+              <input
+                type="text"
+                id="firstName"
+                required
+              />
+              </div>
+            </div>
+          </div>
+          <div className="column question">
+            <div className="question_name">
+            <h3 className="question_name">Last Name:</h3>
+            <div className="button input_lfield">
+              <input
+                type="text"
+                id="lastName"
+                required
+              />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="column question">
             <h3 className="question_name"> Email Address:</h3>
             <div className="button input_lfield">
               <input
