@@ -9,8 +9,8 @@ function CalculatorForm({
   setSelectedRoomType,
   selectedProjectSize,
   setSelectedProjectSize,
-  email,
-  setEmail,
+  // email,
+  // setEmail,
   handleSubmit,
   setRoomTypeChanged,
   setProjectSizeChanged,
@@ -58,7 +58,7 @@ function CalculatorForm({
           </div>
         </div>
         <div className="row">
-          <div className="column question">
+          {/* <div className="column question">
             <div className="question_name">
             <h3 className="question_name">First Name:</h3>
             <div className="button input_lfield">
@@ -97,7 +97,7 @@ function CalculatorForm({
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-          </div>
+          </div> */}
 
 
           <div className="column question actions">
@@ -106,6 +106,7 @@ function CalculatorForm({
               value="Calculate Costs"
               id="calculate-button-submit"
               className="calculate-button"
+              onClick={() => document.getElementById('calculator-form').style.display = 'none'}
             />
           </div>
         </div>

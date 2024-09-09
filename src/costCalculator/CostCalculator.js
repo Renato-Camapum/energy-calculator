@@ -10,20 +10,18 @@ import { runningCosts, savingVsRad, energyUsage, co2Reduction } from './utils/ca
 function Calculator() {
   const [selectedRoomType, setSelectedRoomType] = useState('bathroom');
   const [selectedProjectSize, setSelectedProjectSize] = useState();
-  const [email, setEmail] = useState('');
+  // const [email, setEmail] = useState('');
   const [resultsVisible, setResultsVisible] = useState(false);
   const [roomTypeChanged, setRoomTypeChanged] = useState(false);
   const [projectSizeChanged, setProjectSizeChanged] = useState(false);
 
-
-  
-
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validateEmail(email)) {
-      alert('Please enter a valid email address.');
-      return;
-    }
+     e.preventDefault();
+    // if (!validateEmail(email)) {
+
+    //   alert('Please enter a valid email address.');
+    //   return;
+    // }
     setResultsVisible(true);
     setRoomTypeChanged(true);
     setProjectSizeChanged(true);
@@ -87,8 +85,8 @@ function Calculator() {
                 setSelectedRoomType={setSelectedRoomType}
                 selectedProjectSize={selectedProjectSize}
                 setSelectedProjectSize={setSelectedProjectSize}
-                email={email}
-                setEmail={setEmail}
+                // email={email}
+                // setEmail={setEmail}
                 handleSubmit={handleSubmit}
                 setRoomTypeChanged={setRoomTypeChanged} // Pass the props here
                 setProjectSizeChanged={setProjectSizeChanged} // Pass the props here

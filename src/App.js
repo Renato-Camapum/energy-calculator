@@ -9,7 +9,6 @@ function App() {
   return (
     <div className='body'>
       <Header />
-      <Hero />
       <CostCalculator />
       <Footer />
     </div>

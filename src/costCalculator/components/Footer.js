@@ -16,7 +16,6 @@ function Footer() {
               Warmup PLC
             </a>
           </h4>
-            <p>&copy; 2024 Warmup. All Rights Reserved.</p>
         </div>
     );
 }

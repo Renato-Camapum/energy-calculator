@@ -28,5 +28,6 @@ const energyPrices = {
     return co2red < 0 ? '' : co2red.toFixed(1);
   }
   
+
   export { energyPrices, co2Values, runningCosts, savingVsRad, energyUsage, co2Reduction };
   
