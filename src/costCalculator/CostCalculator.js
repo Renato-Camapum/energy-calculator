@@ -75,10 +75,14 @@ function Calculator() {
 
   return (
     <div className='calculator-container'>
+      <div className="text-left">
+       <h1>Energy savings calculator</h1>
+       <p className='description'>A Warmup system provides a cleaner, smarter, and often more affordable way to heat your home. Warmup underfloor heating is up to 40% more efficient than those using traditional central heating. See how much you could save.</p>
+      </div>
       <div className="wrapper">
         <div className="input">
           <div className="content">
-            {/* <h1><b>Cost Calculator</b></h1> */}
+           
             <div className="margin-top">
               <CalculatorForm
                 selectedRoomType={selectedRoomType}
