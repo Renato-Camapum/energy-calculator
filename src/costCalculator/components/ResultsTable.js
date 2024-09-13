@@ -71,7 +71,7 @@ function ResultsTable() {
                 </td>
               </tr>
               <tr id="quote-btn-row">
-                <td className="quote-space"><a onClick={() => window.location.reload()}>← Return</a></td>
+                <td className="quote-space"><a className="return-btn" onClick={() => window.location.reload()}>← Return</a></td>
                 <td className="quote-btn-data">
                   <a
                     className="quote_btn" target="_blank"
